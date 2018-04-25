@@ -1,3 +1,20 @@
+
+function sumar5(val){
+    return val+5;
+}
+sumar5();
+console.log(sumar5(20));
+
+function sumarL (valA,valB){
+    return valA+valB;
+}
+sumarL(100,5);
+
+function nombres (val1,val2){
+    return val1+", "+val2;
+}
+nombres("Valen","Amenabar");
+
 var users = [
 {name:"Valen",
 lastname:"Amenabar",
@@ -25,6 +42,16 @@ age:21,
 city:"Rosario",
 children:["Imanol","Facundo"]}
 ]
+
+function assamble(user){
+    return user.lastname+" "+user.name+" vive en "+user.city;
+}
+
+
+function listUsersByAgeLimit (agelimit){
 for (var i=0; i<users.lenght;i++){
-    console.log(users[i].name + " " + users[i].lastname + " " + "tiene" + " " +users[i].children + " " + "hijxs");
+    if (users[i].age <= agelimit){
+    console.log(assamble(users[i]));
+    }
+}
 }

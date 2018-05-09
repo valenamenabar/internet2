@@ -49,9 +49,31 @@ function assamble(user){
 
 
 function listUsersByAgeLimit (agelimit){
-for (var i=0; i<users.lenght;i++){
+for (var i=0; i<users.length;i++){
     if (users[i].age <= agelimit){
     console.log(assamble(users[i]));
     }
 }
 }
+
+var listUsers ={
+    listAll: function(users){
+        for (var i=0; i<users.length ; i++) {
+            console.log (listUsers.assamble(users[i]))
+        }
+    },
+    assamble: function(user){
+        return "el usuario   " + user.Name + " " + "que vive en " + user.country + " "+ "trabaja de " + user.profile;
+    },
+    listByAgeLimit: function (users, age) {
+        for (var i=0; i<users.length; i++) {
+            if (users[i].age<age)
+            console.log (listUsers.assamble (users[i]));
+        }
+    },
+    users: [],
+    setUsers: function (users) {
+        listUsers.users = users
+    }
+}
+

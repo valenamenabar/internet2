@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/data.js"></script>
-    <script src="js/scripts.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <title>Lista Productos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/jQuery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/data.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+  <div class="row">
+    <span class="col-3">
+      <input type="text" id="IDMarca">
+      <button type="button" id="action1">Buscar Marca</button>
+    </span>
+    <span class="col-3">
+      <input type="text" id="IDUbicacion">
+      <button type="button" id="action2">Buscar Ubicacion</button>
+    </span>
+    <span class="col-3">
+      <input type="text" id="IDFecha">
+      <button type="button" id="action3">Buscar Fecha</button>
+    </span>
+    <span class="col-3">
+      <input type="text" id="IDPrecio">
+      <button type="button" id="action4">Buscar Precio</button>
+    </span>
+  </div>
+  <div class="table-wrapper">
+    <div class="row" id="table-header">
+      <span class="col-2">
+        <strong></strong>
+      </span>
+      <span class="col-2">
+        <strong>Marca</strong>
+      </span>
+      <span class="col-2">
+        <strong>Ubicacion</strong>
+      </span>
+      <span class="col-2">
+        <strong>Fecha</strong>
+      </span>
+      <span class="col-2">
+        <strong>Precio</strong>
+      </span>
+      <span class="col-2">
+        <strong></strong>
+      </span>
+    </div>
+
+    <div id="table-body">
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
+
 </html>
